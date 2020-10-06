@@ -1,0 +1,45 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10px 10px 20px;
+  padding: 5px;
+}
+.icon-wrapper{
+  display: flex;
+}
+@media (max-width: 500px) {
+  .icon-wrapper{
+    display: none;
+  }
+}
+
+li{
+  list-style: none;
+}
+
+.menu-logo{
+  height: 35px;
+}
+.menu-icon{
+  height: 25px;
+  width: 25px
+}
+
+.plus-icon{
+  margin-right: 10px;
+}
+
+@media (min-width: 1200px) {
+  .menu-icon{
+    height: 35px;
+    width: 35px;
+  }
+  .plus-icon{
+    margin-right: 20px;
+  }
+  .menu-logo{
+    height: 50px;
+  }
+}
+

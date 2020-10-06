@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "recettesvertes"
+    }
+  },
+  "defaultProject": "recettesvertes",
+  "cli": {
+    "analytics": "4b453e74-2a42-4a59-b335-1f74a9372bc2"
+  }
 }
