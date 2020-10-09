@@ -12,4 +12,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openNav(): void {
+    document.getElementById('mySidenav').style.width = '320px';
+  }
 }
