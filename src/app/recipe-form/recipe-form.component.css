@@ -1,0 +1,96 @@
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #F5F6F6;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.close-icon{
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  height: 23px;
+  width: 23px;
+}
+.close-icon:hover{
+  transform: rotate(360deg);
+  transition: 0.3s;
+}
+
+.recipe-form-title{
+  margin: 10px;
+  text-align: center;
+  font: normal normal normal 36px La Belle Aurore;
+  color: #294C46;
+}
+@media(max-width: 600px){
+  .recipe-form-title{
+    font-size: 24px;
+  }
+}
+
+.recipe-form-subtitle{
+  margin: 10px;
+  text-align: center;
+  font: normal normal normal 28px La Belle Aurore;
+  color: #294C46;
+}
+
+@media(max-width: 600px){
+  .recipe-form-subtitle{
+    font-size: 20px;
+  }
+}
+
+.input-wrapper{
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.input-field{
+  border: 2px solid #AFCEC4;
+  border-radius: 10px;
+  min-height: 30px;
+  background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #294C46;
+}
+.input-label{
+  text-align: left;
+  font: normal normal normal 20px Open Sans;
+  color: #294C46;
+  margin-bottom: 5px;
+}
+@media(max-width: 600px){
+  .input-label{
+    font-size: 16px;
+  }
+}
+.input-field:active, .input-field:focus{
+  outline: none;
+}
+
+.input-add-button-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+.input-with-button{
+  width: 85%;
+  margin-right: 4%;
+}
+

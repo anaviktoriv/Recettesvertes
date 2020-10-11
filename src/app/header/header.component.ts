@@ -15,7 +15,8 @@ export class HeaderComponent implements OnInit {
   }
 
   openNav(): void {
-    document.getElementById('mySidenav').style.width = '320px';
+    document.getElementById('recipeForm').classList.remove('recipe-form-visible');
+    document.getElementById('mySidenav').classList.add('menu-sidebar-visible');
   }
 
   openSearchBar(): void {
@@ -35,5 +36,10 @@ export class HeaderComponent implements OnInit {
     } else {
       return 'close-icon';
     }
+  }
+
+  openRecipeForm(): void {
+    document.getElementById('mySidenav').classList.remove('menu-sidebar-visible');
+    document.getElementById('recipeForm').classList.add('recipe-form-visible');
   }
 }

@@ -13,6 +13,11 @@ export class MenuComponent implements OnInit {
   }
 
   closeNav(): void {
-    document.getElementById('mySidenav').style.width = '0';
+    document.getElementById('mySidenav').classList.remove('menu-sidebar-visible');
+  }
+
+  openRecipeForm(): void {
+    document.getElementById('mySidenav').classList.remove('menu-sidebar-visible');
+    document.getElementById('recipeForm').classList.add('recipe-form-visible');
   }
 }

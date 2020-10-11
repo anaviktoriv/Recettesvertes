@@ -7,3 +7,23 @@ body{
   max-width: 100%;
   overflow-x: hidden;
 }
+
+/* Class to make menu slide from the left */
+.menu-sidebar-visible{
+  width: 320px !important;
+}
+
+/* Class to make add/edit recipe component slide from the right */
+.recipe-form-visible{
+  width: 100% !important;
+}
+@media (min-width: 900px) {
+  .recipe-form-visible{
+    width: 70% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .recipe-form-visible{
+    width: 50% !important;
+  }
+}

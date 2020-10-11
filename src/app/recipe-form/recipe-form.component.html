@@ -1,0 +1,35 @@
+<form id="recipeForm" class="sidenav">
+  <img class="close-icon" src="../../assets/images/icons/cross-icon.svg" alt="" (click)="closeRecipeForm()">
+<h2 class="recipe-form-title">Ajouter une recette</h2>
+
+  <!-- Title -->
+  <div class="input-wrapper">
+    <label class="input-label" for="recipe-title">Titre :</label>
+    <input id="recipe-title" class="input-field" type="text">
+  </div>
+
+  <!-- IMAGE URL -->
+  <div class="input-wrapper">
+    <label class="input-label" for="recipe-image-url">URL de l'image :</label>
+    <input id="recipe-image-url" class="input-field" type="text">
+  </div>
+
+  <!-- DESCRIPTION -->
+  <div class="input-wrapper">
+    <label class="input-label" for="recipe-description">Description :</label>
+    <textarea id="recipe-description" class="input-field" rows="5"></textarea>
+  </div>
+
+  <h3 class="recipe-form-subtitle">Préparation</h3>
+
+  <!-- TODO: Add logic : when the enter button is licked or the plus icon is clicked show the instruction that has been added with the number -->
+
+  <!-- Add instruction -->
+  <div class="input-wrapper">
+    <label class="input-label" for="recipe-instruction">Ajouter une étape :</label>
+    <div class="input-add-button-wrapper">
+      <input id="recipe-instruction" class="input-field input-with-button" type="text">
+      <img src="../../assets/images/icons/plus-icon.svg" alt="icone ajouter">
+    </div>
+  </div>
+</form>
