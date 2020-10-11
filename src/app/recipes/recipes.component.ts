@@ -12,6 +12,7 @@ export class RecipesComponent implements OnInit {
   touchstartY = 0;
   touchendX = 0;
   touchendY = 0;
+  titleAndDescriptionIsVisible = false;
 
   shortDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' +
     'Duis maximus arcu in felis semper, vitae laoreet mi pharetra';
@@ -83,15 +84,15 @@ export class RecipesComponent implements OnInit {
   touchEndHandeler(event): void {
     this.touchendX = event.changedTouches[0].screenX;
     this.touchendY = event.changedTouches[0].screenY;
-    this.handleGesture();
+    this.handleGesture(event);
   }
 
-  handleGesture(): void {
-    if (this.touchendX <= this.touchstartX){
-      console.log('Swiped left');
-    }
-    if (this.touchendX >= this.touchstartX){
-      console.log('Swiped right');
+  handleGesture(event): void {
+    if (this.touchendX <= this.touchstartX || this.touchendX >= this.touchstartX){
+      event.target.classList.add('visible');
+      setTimeout(() => {
+        event.target.classList.remove('visible');
+      }, 2000);
     }
   }
 }

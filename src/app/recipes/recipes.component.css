@@ -66,6 +66,11 @@
   opacity: 1;
   transition: opacity 0.5s;
 }
+/* Make appear the recipe thumbnail wrapper when it is swiped left or right*/
+.visible{
+  opacity: 1;
+  transition: opacity 0.5s;
+}
 
 .recipe-thumbnail-title{
   color: #F5F6F6;

@@ -1,3 +1,8 @@
+.navbar{
+  display: flex;
+  flex-direction: column;
+}
+
 .header{
   display: flex;
   align-items: center;
@@ -16,6 +21,9 @@
 
 li{
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-logo{
@@ -45,6 +53,52 @@ li{
   }
   .menu-logo{
     height: 50px;
+  }
+}
+/*---------------- SEARCH BAR ------------- */
+.search-bar{
+  border: 2px solid #AFCEC4;
+  border-radius: 10px;
+  min-height: 30px;
+  background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #294C46;
+}
+
+.search-bar:active, .search-bar:focus{
+  outline: none;
+}
+input::placeholder{
+  font: normal normal normal 18px La Belle Aurore;
+  color: #294C46;
+}
+.search-bar-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  transition: 0.5s;
+}
+.visible{
+  height: 80px;
+  transition: 0.5s;
+}
+
+.close-icon{
+  height: 23px;
+  width: 23px;
+}
+.close-icon:hover{
+  transform: rotate(360deg);
+  transition: 0.5s;
+}
+@media (min-width: 1400px) {
+  .close-icon {
+    height: 32px;
+    width: 32px;
   }
 }
 

@@ -13,12 +13,13 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  align-items: center;
   box-shadow: 0px 3px 6px #00000029;
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px;
   text-decoration: none;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -55,11 +56,7 @@
     width: 35px;
   }
 }
-@media (min-width: 501px) {
-  .sidenav .plus-icon-wrapper, .search-bar{
-    display: none;
-  }
-}
+
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .sidenav a:focus {
@@ -71,13 +68,17 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
+.search-bar-wrapper{
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
 .search-bar{
   border: 2px solid #AFCEC4;
   border-radius: 10px;
   min-height: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
+
   background-color: transparent;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -85,6 +86,7 @@
   padding-right: 5px;
   color: #294C46;
 }
+
 .search-bar:active, .search-bar:focus{
   outline: none;
 }
@@ -92,6 +94,16 @@ input::placeholder{
   font: normal normal normal 16px La Belle Aurore;
   color: #294C46;
 }
-
+.search-icon{
+  position: absolute;
+  right: 10px;
+  height: 20px;
+  top: 8px;
+}
+@media (min-width: 501px) {
+  .sidenav .plus-icon-wrapper, .search-bar, .search-icon{
+    display: none;
+  }
+}
 
 

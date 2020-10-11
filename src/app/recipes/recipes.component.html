@@ -1,7 +1,7 @@
 <div class="recipes-wrapper">
-  <div class="recipe-thumbnail-wrapper" *ngFor="let recipe of recipes"  (touchstart)="touchStartHandeler($event)"  (touchend)="touchEndHandeler($event)">
+  <div class="recipe-thumbnail-wrapper" *ngFor="let recipe of recipes"  >
       <img class="recipe-thumbnail" src="{{recipe.getThumbnailImgPath()}}" alt="">
-    <div class="recipe-thumbnail-title-description-wrapper">
+    <div id="{{recipe.getID()}}" class="recipe-thumbnail-title-description-wrapper" (touchstart)="touchStartHandeler($event)"  (touchend)="touchEndHandeler($event)">
       <h3 class="recipe-thumbnail-title">{{recipe.getName()}}</h3>
       <img src="../../assets/images/icons/decorative-separator.svg" alt="separateur">
       <p class="recipe-thumbnail-short-description">{{recipe.getShortDescription()}}</p>

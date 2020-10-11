@@ -7,6 +7,7 @@ export class Recipe {
   private readonly mainImgPath: string;
 
   constructor(id: number, name: string, shortDesc: string, instructions: string[], thumbnailImgPath: string, mainImgPath: string) {
+    this.id = id;
     this.name = name;
     this.shortDescription = shortDesc;
     this.instructions = instructions;
@@ -14,6 +15,9 @@ export class Recipe {
     this.mainImgPath = mainImgPath;
   }
 
+  getID(): number {
+    return this.id;
+  }
 
   getName(): string {
     return this.name;

@@ -1,4 +1,4 @@
-<nav>
+<nav class="navbar">
   <ul class="header">
     <li><img (click)="openNav()" class="menu-icon" src="../../assets/images/icons/hamburger-icon.svg" alt="icone menu">
     </li>
@@ -6,8 +6,10 @@
     <li><img class="menu-logo" src="../../assets/images/icons/logo-icon.svg" alt="logo"></li>
     <div class="icon-wrapper">
       <li><img class="menu-icon plus-icon" src="../../assets/images/icons/plus-icon.svg" alt="icon ajouter"></li>
-      <li><img class="menu-icon" src="../../assets/images/icons/search-icon.svg" alt="icone rechercher"></li>
+      <li><img (click)="openSearchBar()" [class]="changeClass()" [src]="changeIcon()" alt="icone rechercher"></li>
     </div>
-
   </ul>
+  <div id="searchBarWrapper" class="search-bar-wrapper">
+    <input class="search-bar" type="text" placeholder="Rechercher une recette..">
+  </div>
 </nav>
